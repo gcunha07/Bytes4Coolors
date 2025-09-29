@@ -43,9 +43,9 @@ export default function ComponenteCores() {
             <div className="p-4 flex justify-center">
                 <button
                     onClick={gerarNovaPaleta}
-                    className="px-4 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition"
+                    className="px-4 py-2 bg-white-600 text-white rounded-lg shadow hover:bg-red-700 transition"
                 >
-                    🎨 Gerar Nova Paleta
+                     Gerar Nova Paleta
                 </button>
             </div>
 
@@ -67,7 +67,7 @@ export default function ComponenteCores() {
                                 className="w-full px-2 py-1 rounded shadow hover:bg-blue-300"
                                 onClick={() => copiarColor(cor.hex)}
                             >
-                                ✂️ Copiar
+                                Copiar Paleta
                             </button>
                             <button
                                 className={`w-full px-2 py-1 rounded shadow text-white ${cor.locked
@@ -76,7 +76,7 @@ export default function ComponenteCores() {
                                     }`}
                                 onClick={() => toggleLock(index)}
                             >
-                                {cor.locked ? "🔒 Bloqueado" : "🔓 Desbloquear"}
+                                {cor.locked ? "Bloqueado" : " Desbloquear"}
                             </button>
                         </div>
                     </div>
